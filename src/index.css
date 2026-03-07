@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply transition-colors duration-300 bg-white text-slate-900;
+  }
+
+  .dark {
+    --bg-color: #030712;
+    --text-color: #f9fafb;
+    --card-bg: #111827;
+    --border-color: #1f2937;
+  }
+
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #111827;
+    --card-bg: #f3f4f6;
+    --border-color: #e5e7eb;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 px-4 md:px-8 max-w-[1440px] mx-auto;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-slate-100 shadow-sm;
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-[#1e40af] text-white rounded-xl font-bold hover:bg-blue-800 transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply px-8 py-4 border-2 border-[#1e40af] text-[#1e40af] rounded-xl font-bold hover:bg-[#1e40af] hover:text-white transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply relative text-sm font-semibold text-slate-700 hover:text-[#1e40af] transition-colors py-2;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-200 rounded-full hover:bg-blue-300 transition-colors;
+}
+
+/* Reset image grayscale to match screenshot (color) */
+img {
+  @apply grayscale-0;
+}
