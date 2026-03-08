@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Eye, Layout, Database } from 'lucide-react';
-import weatherImg from '../assets/weather.png';
-import campusImg from '../assets/campus.png';
-import malnutritionImg from '../assets/malnutrition.png';
+import weatherImg from '../assets/weather-dashboard-v2.png';
+import campusImg from '../assets/campus-eye-v2.jpeg';
+import malnutritionImg from '../assets/malnutrition-v2.jpeg';
 
 const Projects = () => {
     const projects = [
@@ -17,20 +17,20 @@ const Projects = () => {
             live: '#',
         },
         {
-            title: 'Weather Dashboard',
-            description: 'A responsive dashboard providing real-time temperatures and weekly forecasts in a clean interface.',
-            tech: ['HTML', 'CSS', 'JavaScript'],
-            img: weatherImg,
-            icon: <Layout className="w-6 h-6 text-[#1e40af]" />,
-            github: 'https://github.com/kanth071',
-            live: '#',
-        },
-        {
             title: 'Global Malnutrition',
             description: 'An interactive Power BI dashboard analyzing malnutrition trends across countries for public health support.',
             tech: ['Power BI', 'Data Analytics', 'Data Visualization'],
             img: malnutritionImg,
             icon: <Database className="w-6 h-6 text-[#1e40af]" />,
+            github: 'https://github.com/kanth071',
+            live: '#',
+        },
+        {
+            title: 'Weather Dashboard',
+            description: 'A responsive dashboard providing real-time temperatures and weekly forecasts in a clean interface.',
+            tech: ['HTML', 'CSS', 'JavaScript'],
+            img: weatherImg,
+            icon: <Layout className="w-6 h-6 text-[#1e40af]" />,
             github: 'https://github.com/kanth071',
             live: '#',
         },
