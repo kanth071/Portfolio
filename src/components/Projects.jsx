@@ -47,9 +47,9 @@ const Projects = () => {
                             key={idx}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: idx * 0.1 }}
-                            className="bg-[#f8fbfe] rounded-[2.5rem] border border-blue-50 shadow-sm overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 group h-full"
+                            viewport={{ once: true, amount: 0.1 }}
+                            transition={{ delay: idx * 0.05, duration: 0.4 }}
+                            className="bg-[#f8fbfe] rounded-[2.5rem] border border-blue-50 shadow-sm overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 group h-full motion-safe-gpu"
                         >
                             <div className="relative overflow-hidden aspect-video">
                                 <img

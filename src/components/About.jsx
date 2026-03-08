@@ -58,9 +58,9 @@ const About = () => {
                             key={idx}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: idx * 0.1 }}
-                            className="flex flex-col items-center bg-[#f8fbfe] p-10 rounded-[2.5rem] border border-blue-50 hover:border-[#1e40af]/20 shadow-sm hover:shadow-xl transition-all duration-500 group cursor-pointer h-full"
+                            viewport={{ once: true, amount: 0.1 }}
+                            transition={{ delay: idx * 0.05, duration: 0.4 }}
+                            className="flex flex-col items-center bg-[#f8fbfe] p-10 rounded-[2.5rem] border border-blue-50 hover:border-[#1e40af]/20 shadow-sm hover:shadow-xl transition-all duration-500 group cursor-pointer h-full motion-safe-gpu"
                         >
                             <div className="w-24 h-24 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2 overflow-hidden flex-shrink-0">
                                 <div className="w-full h-full group-hover:scale-110 transition-transform duration-500 flex items-center justify-center">

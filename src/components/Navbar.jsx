@@ -24,10 +24,10 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 flex justify-center py-8 px-4 md:px-8 pointer-events-none">
-            <div className={`transition-all duration-700 flex items-center justify-between px-10 py-5 rounded-full border border-slate-100 pointer-events-auto ${scrolled
-                ? 'bg-white/95 backdrop-blur-xl shadow-2xl w-full max-w-5xl translate-y-[-10px]'
-                : 'bg-white shadow-xl w-full max-w-6xl'
-                }`}>
+            <div className={`transition-all duration-500 flex items-center justify-between px-10 py-5 rounded-full border border-slate-100 pointer-events-auto shadow-xl ${scrolled
+                ? 'bg-white/95 backdrop-blur-xl max-w-5xl translate-y-2'
+                : 'bg-white max-w-6xl'
+                } w-full motion-safe-gpu`}>
 
                 {/* Logo Section */}
                 <div className="flex items-center gap-4 group cursor-pointer shrink-0">

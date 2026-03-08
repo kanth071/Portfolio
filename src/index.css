@@ -5,24 +5,23 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
     @apply transition-colors duration-300 bg-white text-slate-900;
+    text-rendering: optimizeLegibility;
+    overscroll-behavior-y: none;
   }
 
-  .dark {
-    --bg-color: #030712;
-    --text-color: #f9fafb;
-    --card-bg: #111827;
-    --border-color: #1f2937;
-  }
-
-  :root {
-    --bg-color: #ffffff;
-    --text-color: #111827;
-    --card-bg: #f3f4f6;
-    --border-color: #e5e7eb;
+  /* GPU Acceleration for smooth animations */
+  .section-padding,
+  .motion-safe-gpu {
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform: translateZ(0);
+    will-change: transform, opacity;
   }
 }
 
@@ -33,24 +32,23 @@
 
   .glass {
     @apply bg-white/70 backdrop-blur-md border border-slate-100 shadow-sm;
+    transform: translateZ(0);
   }
 
   .btn-primary {
     @apply px-8 py-4 bg-[#1e40af] text-white rounded-xl font-bold hover:bg-blue-800 transition-all duration-300;
+    transform: translateZ(0);
   }
 
   .btn-outline {
     @apply px-8 py-4 border-2 border-[#1e40af] text-[#1e40af] rounded-xl font-bold hover:bg-[#1e40af] hover:text-white transition-all duration-300;
-  }
-
-  .nav-link {
-    @apply relative text-sm font-semibold text-slate-700 hover:text-[#1e40af] transition-colors py-2;
+    transform: translateZ(0);
   }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -61,7 +59,8 @@
   @apply bg-blue-200 rounded-full hover:bg-blue-300 transition-colors;
 }
 
-/* Reset image grayscale to match screenshot (color) */
+/* Performance fix for images */
 img {
   @apply grayscale-0;
+  content-visibility: auto;
 }

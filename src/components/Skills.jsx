@@ -78,11 +78,11 @@ const Skills = () => {
                             <motion.div
                                 layout
                                 key={skill.name}
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0, scale: 0.9 }}
-                                transition={{ duration: 0.3 }}
-                                className="bg-slate-50 border border-slate-100 p-12 rounded-[2.5rem] flex items-center justify-center text-center group hover:bg-white hover:shadow-2xl hover:border-blue-100 transition-all duration-500 h-32"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="bg-slate-50 border border-slate-100 p-12 rounded-[2.5rem] flex items-center justify-center text-center group hover:bg-white hover:shadow-2xl hover:border-blue-100 transition-all duration-500 h-32 motion-safe-gpu"
                             >
                                 <span className="text-sm font-bold text-slate-800 tracking-widest group-hover:text-[#1e40af] transition-colors uppercase">
                                     {skill.name}
