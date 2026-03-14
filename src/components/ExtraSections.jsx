@@ -19,6 +19,7 @@ import icatLogo from '../assets/icat-logo.png';
 import aspireLogoJpg from '../assets/aspire-logo.jpg';
 import deloitteLogoImg from '../assets/deloitte-logo.jpg';
 import letsupgradeLogo from '../assets/letsupgrade-logo.png';
+import developersArenaLogo from '../assets/developersarena-logo.jpg';
 
 const DeloitteLogo = () => (
     <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" className="w-full h-full p-1">
@@ -141,10 +142,10 @@ const ExtraSections = () => {
                                 >
                                     <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
                                         <div className="flex justify-between items-start mb-8">
-                                            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 group-hover/card:border-[#1e40af]/30 transition-all p-3">
-                                                <Briefcase className="w-8 h-8 text-[#1e40af]" strokeWidth={2} />
+                                            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 group-hover/card:border-[#1e40af]/30 transition-all p-3 overflow-hidden">
+                                                <img src={developersArenaLogo} alt="Developers Arena Logo" className="w-full h-full object-contain" />
                                             </div>
-                                            <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase bg-slate-50 px-3 py-1.5 rounded-full">OCT 2025 - PRESENT</span>
+                                            <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase bg-slate-50 px-3 py-1.5 rounded-full">DEC 2025 - MARCH 2026</span>
                                         </div>
                                         <h3 className="text-2xl font-black text-slate-900 mb-1 group-hover/card:text-[#1e40af] transition-colors tracking-tight">Data Science and Analytics Intern</h3>
                                         <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest">Developers Arena</p>
@@ -320,11 +321,11 @@ const ExtraSections = () => {
                             <motion.div
                                 key={cert.id}
                                 whileHover={{ y: -6 }}
-                                className="bg-[#f8fbfe] rounded-[2.5rem] p-8 flex flex-col justify-between items-start border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group h-80"
+                                className="bg-[#f8fbfe] rounded-[2rem] p-6 flex flex-col justify-between items-start border border-blue-50 shadow-sm hover:shadow-lg transition-all duration-500 group h-[17rem]"
                             >
                                 <div className="w-full">
-                                    <div className="flex items-start gap-4 mb-6">
-                                        <div className={`w-16 h-16 flex-shrink-0 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md bg-white flex items-center justify-center overflow-hidden transition-all duration-500 p-2 ${cert.bgIcon || ''}`}>
+                                    <div className="flex items-start gap-4 mb-5">
+                                        <div className={`w-14 h-14 flex-shrink-0 rounded-xl shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md bg-white flex items-center justify-center overflow-hidden transition-all duration-500 p-2 ${cert.bgIcon || ''}`}>
                                             {cert.logoComponent ? (
                                                 <div className="w-full h-full group-hover:scale-110 transition-transform duration-500">
                                                     <cert.logoComponent />
@@ -334,21 +335,21 @@ const ExtraSections = () => {
                                             ) : cert.image ? (
                                                 <img src={cert.image} alt={cert.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                                             ) : (
-                                                <span className={`${cert.logoColor} group-hover:scale-110 transition-transform duration-500`}>{cert.logoText}</span>
+                                                <span className={`${cert.logoColor} group-hover:scale-110 transition-transform duration-500 text-lg`}>{cert.logoText}</span>
                                             )}
                                         </div>
                                         <div className="flex flex-col">
-                                            <p className="text-[10px] font-bold tracking-widest text-slate-400 uppercase mb-1">{cert.category}</p>
-                                            <h3 className="text-xl font-bold text-slate-800 leading-tight tracking-tight">{cert.title}</h3>
+                                            <p className="text-[9px] font-bold tracking-widest text-slate-400 uppercase mb-1">{cert.category}</p>
+                                            <h3 className="text-lg font-bold text-slate-800 leading-tight tracking-tight">{cert.title}</h3>
                                         </div>
                                     </div>
-                                    <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider">{cert.issuer}</p>
+                                    <p className="text-slate-500 text-[10px] font-semibold uppercase tracking-wider">{cert.issuer}</p>
                                 </div>
 
-                                <div className="w-full flex justify-end mt-4">
+                                <div className="w-full flex justify-end">
                                     <button
                                         onClick={() => setSelectedCert(cert)}
-                                        className="px-6 py-3 rounded-full bg-white border border-slate-200 text-[11px] font-bold tracking-widest text-[#1e40af] uppercase hover:bg-[#1e40af] hover:text-white hover:shadow-lg transition-all duration-300 active:scale-95 shadow-sm"
+                                        className="px-5 py-2.5 rounded-full bg-white border border-slate-200 text-[10px] font-bold tracking-widest text-[#1e40af] uppercase hover:bg-[#1e40af] hover:text-white hover:shadow-lg transition-all duration-300 active:scale-95 shadow-sm"
                                     >
                                         VIEW CERTIFICATE
                                     </button>
