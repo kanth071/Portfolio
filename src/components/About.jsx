@@ -6,25 +6,25 @@ const About = () => {
     const specializations = [
         {
             title: 'Neural Intelligence',
-            desc: 'Designing and implementing advanced deep learning models and custom neural architectures to extract intelligence from complex datasets.',
+            desc: 'Training advanced models to enable systems to learn from data and make intelligent predictions.',
             icon: <Brain className="w-10 h-10 text-[#1e40af]" />,
             color: 'bg-blue-50'
         },
         {
             title: 'Computational Analytics',
-            desc: 'Applying robust statistical methodologies and predictive modeling to transform raw data into high-impact strategic insights.',
+            desc: 'Using statistics and machine learning to analyze data and uncover actionable insights.',
             icon: <BarChart3 className="w-10 h-10 text-[#1e40af]" />,
             color: 'bg-indigo-50'
         },
         {
             title: 'Cognitive Vision',
-            desc: 'Developing real-time computer vision applications utilizing OpenCV and deep learning for intelligent visual data processing.',
+            desc: 'Building computer vision systems with Python and OpenCV to enable machines to interpret and act on visual data.',
             icon: <Eye className="w-10 h-10 text-[#1e40af]" />,
             color: 'bg-sky-50'
         },
         {
-            title: 'Frontend Development',
-            desc: 'Architecting high-performance, responsive user interfaces and interactive digital experiences using React and modern CSS frameworks.',
+            title: 'UI/Frontend Engineering',
+            desc: 'Creating responsive and interactive UIs using HTML, CSS, Tailwind, and JavaScript.',
             icon: <Layout className="w-10 h-10 text-[#1e40af]" />,
             color: 'bg-purple-50'
         }
