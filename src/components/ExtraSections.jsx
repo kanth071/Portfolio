@@ -109,11 +109,31 @@ const ExtraSections = () => {
                 <div className="max-w-6xl mx-auto px-4">
                     <h2 className="text-4xl font-bold text-[#1e40af] mb-12 text-center uppercase tracking-tight">Experience</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Data Science Intern */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group"
+                        >
+                            <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2 text-[#1e40af]">
+                                <Briefcase className="w-8 h-8" strokeWidth={2.5} />
+                            </div>
+                            <h3 className="text-xl font-bold text-slate-800 mb-1">
+                                Data Science and Analytics Intern
+                            </h3>
+                            <p className="text-sm font-semibold text-slate-500 mb-4 tracking-wide uppercase">Developers Arena</p>
+                            <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                                Analyze complex datasets and deliver actionable insights using predictive modeling, statistical analysis, and advanced visualization.
+                            </p>
+                        </motion.div>
+
                         {/* Power BI Intern */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
                             className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group"
                         >
                             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
@@ -133,7 +153,7 @@ const ExtraSections = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.1 }}
+                            transition={{ delay: 0.2 }}
                             className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group"
                         >
                             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
@@ -153,7 +173,7 @@ const ExtraSections = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.2 }}
+                            transition={{ delay: 0.3 }}
                             className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group"
                         >
                             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
