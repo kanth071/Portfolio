@@ -114,8 +114,9 @@ const ExtraSections = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group"
+                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
                         >
+                            <div className="absolute top-8 right-10 text-4xl font-black text-blue-100/50 group-hover:text-blue-200/50 transition-colors duration-500">01</div>
                             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2 text-[#1e40af]">
                                 <Briefcase className="w-8 h-8" strokeWidth={2.5} />
                             </div>
@@ -134,8 +135,9 @@ const ExtraSections = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group"
+                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
                         >
+                            <div className="absolute top-8 right-10 text-4xl font-black text-blue-100/50 group-hover:text-blue-200/50 transition-colors duration-500">02</div>
                             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
                                 <img src={smartbridgeLogo} alt="SmartBridge Logo" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" />
                             </div>
@@ -154,8 +156,9 @@ const ExtraSections = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group"
+                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
                         >
+                            <div className="absolute top-8 right-10 text-4xl font-black text-blue-100/50 group-hover:text-blue-200/50 transition-colors duration-500">03</div>
                             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
                                 <img src={aspireExpLogo} alt="Aspire Institute Logo" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" />
                             </div>
@@ -174,8 +177,9 @@ const ExtraSections = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
-                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group"
+                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
                         >
+                            <div className="absolute top-8 right-10 text-4xl font-black text-blue-100/50 group-hover:text-blue-200/50 transition-colors duration-500">04</div>
                             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
                                 <img src={edunetLogo} alt="Edunet Foundation Logo" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" />
                             </div>
