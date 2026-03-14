@@ -313,10 +313,10 @@ const ExtraSections = () => {
             </section>
 
             {/* Certifications Grid */}
-            <section id="certifications" className="section-padding py-24 bg-white">
+            <section id="certifications" className="section-padding py-16 bg-white">
                 <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-[#1e40af] mb-12 text-center uppercase tracking-tight">Certifications</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <h2 className="text-4xl font-bold text-[#1e40af] mb-10 text-center uppercase tracking-tight">Certifications</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {certificates.map((cert) => (
                             <motion.div
                                 key={cert.id}
