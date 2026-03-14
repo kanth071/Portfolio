@@ -49,7 +49,7 @@ const About = () => {
                     transition={{ duration: 0.6 }}
                     className="text-xl text-slate-700 leading-relaxed max-w-4xl mx-auto mb-20 font-medium text-center"
                 >
-                    I'm <span className="font-bold text-[#1e40af]">Pulipaka Lakshmi Kanth</span>, a <span className="font-bold text-[#1e40af]">B.Tech Computer Science</span> student specializing in <span className="font-bold text-[#1e40af]">Artificial Intelligence and Machine Learning</span>, with hands-on experience in <span className="font-bold text-[#1e40af]">Machine Learning, Data Analytics, Power BI</span>, and <span className="font-bold text-[#1e40af]">Computer Vision</span>. I have built real-world projects including face recognition systems, data dashboards, and web applications. Proficient in Python-based analysis and scalable AI solutions, I bring strong problem-solving, analytical, and leadership skills to every project I undertake.
+                    I am <span className="font-bold text-[#1e40af]">Lakshmi Kanth</span>, a <span className="font-bold text-[#1e40af]">B.Tech student</span> specializing in <span className="font-bold text-[#1e40af]">Artificial Intelligence and Machine Learning</span>, focused on developing intelligent, data-driven AI solutions for real-world challenges, empowered by strong analytical and leadership capabilities.
                 </motion.p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
