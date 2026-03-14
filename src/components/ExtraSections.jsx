@@ -105,92 +105,161 @@ const ExtraSections = () => {
     return (
         <>
             {/* Experience */}
-            <section id="experience" className="section-padding py-24 bg-white">
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-[#1e40af] mb-12 text-center uppercase tracking-tight">Experience</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* Data Science Intern */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
-                        >
-                            <div className="absolute top-8 right-10 text-4xl font-black text-blue-100/50 group-hover:text-blue-200/50 transition-colors duration-500">01</div>
-                            <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2 text-[#1e40af]">
-                                <Briefcase className="w-8 h-8" strokeWidth={2.5} />
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-800 mb-1">
-                                Data Science and Analytics Intern
-                            </h3>
-                            <p className="text-sm font-semibold text-slate-500 mb-4 tracking-wide uppercase">Developers Arena</p>
-                            <p className="text-slate-600 leading-relaxed font-medium text-sm">
-                                Analyze complex datasets and deliver actionable insights using predictive modeling, statistical analysis, and advanced visualization.
-                            </p>
-                        </motion.div>
+            <section id="experience" className="section-padding py-32 bg-white relative overflow-hidden">
+                {/* Background Text "EXPERIENCE" */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 text-[12rem] font-black text-slate-50 select-none pointer-events-none whitespace-nowrap opacity-50 uppercase mt-10">
+                    Experience
+                </div>
 
-                        {/* Power BI Intern */}
-                        <motion.div
+                <div className="max-w-7xl mx-auto px-4 relative z-10">
+                    <div className="text-center mb-24">
+                        <motion.h2 
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.1 }}
-                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
+                            className="text-5xl lg:text-6xl font-black text-slate-900 tracking-tight"
                         >
-                            <div className="absolute top-8 right-10 text-4xl font-black text-blue-100/50 group-hover:text-blue-200/50 transition-colors duration-500">02</div>
-                            <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
-                                <img src={smartbridgeLogo} alt="SmartBridge Logo" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" />
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-800 mb-1">
-                                Power BI Intern
-                            </h3>
-                            <p className="text-sm font-semibold text-slate-500 mb-4 tracking-wide uppercase">The SmartBridge</p>
-                            <p className="text-slate-600 leading-relaxed font-medium text-sm">
-                                Designing and developing interactive Power BI dashboards and reports to transform complex data into clear, actionable insights, enabling stakeholders to make informed, data-driven decisions.
-                            </p>
-                        </motion.div>
+                            Professional <span className="text-[#1e40af]">Experience</span>
+                        </motion.h2>
+                    </div>
 
-                        {/* AI Leadership Program */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.2 }}
-                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
-                        >
-                            <div className="absolute top-8 right-10 text-4xl font-black text-blue-100/50 group-hover:text-blue-200/50 transition-colors duration-500">03</div>
-                            <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
-                                <img src={aspireExpLogo} alt="Aspire Institute Logo" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" />
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-800 mb-1">
-                                AI Leadership Program
-                            </h3>
-                            <p className="text-sm font-semibold text-slate-500 mb-4 tracking-wide uppercase">Aspire Institute</p>
-                            <p className="text-slate-600 leading-relaxed font-medium text-sm">
-                                Engaged in the AI Leadership Program – ASPIRE to strengthen AI and emerging technologies, while developing strategic thinking and leadership for data-driven solutions.
-                            </p>
-                        </motion.div>
+                    <div className="relative">
+                        {/* Vertical Timeline Line */}
+                        <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-slate-100 hidden lg:block"></div>
 
-                        {/* Front End Developer */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.3 }}
-                            className="bg-[#f8fbfe] p-8 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
-                        >
-                            <div className="absolute top-8 right-10 text-4xl font-black text-blue-100/50 group-hover:text-blue-200/50 transition-colors duration-500">04</div>
-                            <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
-                                <img src={edunetLogo} alt="Edunet Foundation Logo" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+                        <div className="space-y-24">
+                            {/* 01 - Developers Arena */}
+                            <div className="relative flex flex-col lg:flex-row items-center justify-between group">
+                                <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-200 border-4 border-white z-20 group-hover:bg-[#1e40af] group-hover:scale-125 transition-all duration-500"></div>
+                                <div className="absolute left-[10%] lg:left-[15%] top-1/2 -translate-y-1/2 text-[10rem] lg:text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 transition-colors duration-500">01</div>
+                                
+                                <motion.div 
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    className="w-full lg:w-[45%] z-10"
+                                >
+                                    <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
+                                        <div className="flex justify-between items-start mb-8">
+                                            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 group-hover/card:border-[#1e40af]/30 transition-all p-3">
+                                                <Briefcase className="w-8 h-8 text-[#1e40af]" strokeWidth={2} />
+                                            </div>
+                                            <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase bg-slate-50 px-3 py-1.5 rounded-full">OCT 2025 - PRESENT</span>
+                                        </div>
+                                        <h3 className="text-2xl font-black text-slate-900 mb-1 group-hover/card:text-[#1e40af] transition-colors tracking-tight">Data Science and Analytics Intern</h3>
+                                        <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest">Developers Arena</p>
+                                        <p className="text-slate-600 italic leading-relaxed font-medium mb-8 border-l-4 border-blue-50 pl-6 py-2">
+                                            "Analyze complex datasets and deliver actionable insights using predictive modeling, statistical analysis, and advanced visualization."
+                                        </p>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['Data Analysis', 'Predictive Modeling', 'Python', 'ML'].map(tag => (
+                                                <span key={tag} className="text-[10px] font-black text-[#1e40af] uppercase tracking-widest bg-blue-50/50 px-4 py-2 rounded-full border border-blue-100/30">{tag}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                                <div className="hidden lg:block lg:w-[45%]"></div>
                             </div>
-                            <h3 className="text-xl font-bold text-slate-800 mb-1">
-                                Front End Developer
-                            </h3>
-                            <p className="text-sm font-semibold text-slate-500 mb-4 tracking-wide uppercase">Edunet Foundation</p>
-                            <p className="text-slate-600 leading-relaxed font-medium text-sm">
-                                Building intuitive and responsive web applications with HTML, CSS, and JavaScript, focusing on seamless user experience and interactive design.
-                            </p>
-                        </motion.div>
+
+                            {/* 02 - SmartBridge */}
+                            <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between group">
+                                <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-200 border-4 border-white z-20 group-hover:bg-[#1e40af] group-hover:scale-125 transition-all duration-500"></div>
+                                <div className="absolute right-[10%] lg:right-[15%] top-1/2 -translate-y-1/2 text-[10rem] lg:text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 transition-colors duration-500">02</div>
+                                
+                                <motion.div 
+                                    initial={{ opacity: 0, x: 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    className="w-full lg:w-[45%] z-10"
+                                >
+                                    <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
+                                        <div className="flex justify-between items-start mb-8">
+                                            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 group-hover/card:border-[#1e40af]/30 transition-all p-3 overflow-hidden">
+                                                <img src={smartbridgeLogo} alt="Logo" className="w-full h-full object-contain" />
+                                            </div>
+                                            <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase bg-slate-50 px-3 py-1.5 rounded-full">JUNE 2025 - AUG 2025</span>
+                                        </div>
+                                        <h3 className="text-2xl font-black text-slate-900 mb-1 group-hover/card:text-[#1e40af] transition-colors tracking-tight">Power BI Intern</h3>
+                                        <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest">The SmartBridge</p>
+                                        <p className="text-slate-600 italic leading-relaxed font-medium mb-8 border-l-4 border-blue-50 pl-6 py-2">
+                                            "Designing and developing interactive Power BI dashboards and reports to transform complex data into clear, actionable insights."
+                                        </p>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['Power BI', 'Data Dashboards', 'DAX', 'Analytics'].map(tag => (
+                                                <span key={tag} className="text-[10px] font-black text-[#1e40af] uppercase tracking-widest bg-blue-50/50 px-4 py-2 rounded-full border border-blue-100/30">{tag}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                                <div className="hidden lg:block lg:w-[45%]"></div>
+                            </div>
+
+                            {/* 03 - Aspire Institute */}
+                            <div className="relative flex flex-col lg:flex-row items-center justify-between group">
+                                <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-200 border-4 border-white z-20 group-hover:bg-[#1e40af] group-hover:scale-125 transition-all duration-500"></div>
+                                <div className="absolute left-[10%] lg:left-[15%] top-1/2 -translate-y-1/2 text-[10rem] lg:text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 transition-colors duration-500">03</div>
+                                
+                                <motion.div 
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    className="w-full lg:w-[45%] z-10"
+                                >
+                                    <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
+                                        <div className="flex justify-between items-start mb-8">
+                                            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 group-hover/card:border-[#1e40af]/30 transition-all p-3 overflow-hidden">
+                                                <img src={aspireExpLogo} alt="Logo" className="w-full h-full object-contain" />
+                                            </div>
+                                            <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase bg-slate-50 px-3 py-1.5 rounded-full">GLOBAL RECOGNITION</span>
+                                        </div>
+                                        <h3 className="text-2xl font-black text-slate-900 mb-1 group-hover/card:text-[#1e40af] transition-colors tracking-tight">AI Leadership Program</h3>
+                                        <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest">Aspire Institute</p>
+                                        <p className="text-slate-600 italic leading-relaxed font-medium mb-8 border-l-4 border-blue-50 pl-6 py-2">
+                                            "Engaged in the AI Leadership Program – ASPIRE to strengthen AI and emerging technologies, while developing strategic thinking."
+                                        </p>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['Leadership', 'AI Strategy', 'Global Network', 'Soft Skills'].map(tag => (
+                                                <span key={tag} className="text-[10px] font-black text-[#1e40af] uppercase tracking-widest bg-blue-50/50 px-4 py-2 rounded-full border border-blue-100/30">{tag}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                                <div className="hidden lg:block lg:w-[45%]"></div>
+                            </div>
+
+                            {/* 04 - Edunet */}
+                            <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between group">
+                                <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-200 border-4 border-white z-20 group-hover:bg-[#1e40af] group-hover:scale-125 transition-all duration-500"></div>
+                                <div className="absolute right-[10%] lg:right-[15%] top-1/2 -translate-y-1/2 text-[10rem] lg:text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 transition-colors duration-500">04</div>
+                                
+                                <motion.div 
+                                    initial={{ opacity: 0, x: 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    className="w-full lg:w-[45%] z-10"
+                                >
+                                    <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
+                                        <div className="flex justify-between items-start mb-8">
+                                            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 group-hover/card:border-[#1e40af]/30 transition-all p-3 overflow-hidden">
+                                                <img src={edunetLogo} alt="Logo" className="w-full h-full object-contain" />
+                                            </div>
+                                            <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase bg-slate-50 px-3 py-1.5 rounded-full">INTERNSHIP</span>
+                                        </div>
+                                        <h3 className="text-2xl font-black text-slate-900 mb-1 group-hover/card:text-[#1e40af] transition-colors tracking-tight">Front End Developer</h3>
+                                        <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest">Edunet Foundation</p>
+                                        <p className="text-slate-600 italic leading-relaxed font-medium mb-8 border-l-4 border-blue-50 pl-6 py-2">
+                                            "Building intuitive and responsive web applications with HTML, CSS, and JavaScript, focusing on seamless user experience."
+                                        </p>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['HTML', 'CSS', 'JavaScript', 'Responsive'].map(tag => (
+                                                <span key={tag} className="text-[10px] font-black text-[#1e40af] uppercase tracking-widest bg-blue-50/50 px-4 py-2 rounded-full border border-blue-100/30">{tag}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                                <div className="hidden lg:block lg:w-[45%]"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
