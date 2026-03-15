@@ -46,7 +46,7 @@ const Contact = () => {
 
     return (
         <section id="contact" className="section-padding py-24 bg-white relative">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4 md:px-12">
                 <div className="text-center mb-16">
                     <h2 className="text-5xl font-bold text-[#1e40af] mb-4">
                         Get In Touch
@@ -64,32 +64,32 @@ const Contact = () => {
                     >
                         <div className="grid grid-cols-1 gap-8">
                             {contactInfo.map((info, idx) => (
-                                <div key={idx} className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm flex items-center gap-8 group hover:shadow-lg transition-all">
-                                    <div className={`p-6 ${info.color} rounded-2xl group-hover:scale-110 transition-transform shadow-sm`}>
+                                <div key={idx} className="bg-white p-6 sm:p-10 rounded-[2.5rem] border border-slate-100 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 group hover:shadow-lg transition-all">
+                                    <div className={`p-4 sm:p-6 ${info.color} rounded-2xl group-hover:scale-110 transition-transform shadow-sm flex-shrink-0`}>
                                         {info.icon}
                                     </div>
-                                    <div>
-                                        <h4 className="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-2">{info.label}</h4>
-                                        <p className="text-xl sm:text-2xl font-bold text-slate-800 tracking-tight transition-colors truncate max-w-[200px] sm:max-w-none">{info.value}</p>
+                                    <div className="w-full overflow-hidden">
+                                        <h4 className="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-1 sm:mb-2">{info.label}</h4>
+                                        <p className="text-base sm:text-xl md:text-2xl font-bold text-slate-800 tracking-tight transition-colors truncate">{info.value}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="bg-slate-50 p-12 rounded-[3.5rem] border border-slate-100">
-                            <h3 className="text-2xl font-bold text-slate-800 mb-10 tracking-tight transition-colors">Social Profiles</h3>
-                            <div className="flex flex-wrap gap-6">
-                                <a href="https://github.com/kanth071" target="_blank" rel="noopener noreferrer" className="p-5 bg-white border border-slate-100 shadow-sm text-[#1e40af] rounded-full hover:scale-110 hover:shadow-md transition-all">
-                                    <Github className="w-8 h-8" />
+                        <div className="bg-slate-50 p-6 sm:p-8 md:p-12 rounded-[2.5rem] sm:rounded-[3.5rem] border border-slate-100">
+                            <h3 className="text-2xl font-bold text-slate-800 mb-6 sm:mb-10 tracking-tight transition-colors">Social Profiles</h3>
+                            <div className="flex flex-wrap gap-4 sm:gap-6">
+                                <a href="https://github.com/kanth071" target="_blank" rel="noopener noreferrer" className="p-4 sm:p-5 bg-white border border-slate-100 shadow-sm text-[#1e40af] rounded-full hover:scale-110 hover:shadow-md transition-all">
+                                    <Github className="w-6 h-6 sm:w-8 sm:h-8" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/lakshmi-kanth-pulipaka-6957b932b" target="_blank" rel="noopener noreferrer" className="p-5 bg-white border border-slate-100 shadow-sm text-[#1e40af] rounded-full hover:scale-110 hover:shadow-md transition-all">
-                                    <Linkedin className="w-8 h-8" />
+                                <a href="https://www.linkedin.com/in/lakshmi-kanth-pulipaka-6957b932b" target="_blank" rel="noopener noreferrer" className="p-4 sm:p-5 bg-white border border-slate-100 shadow-sm text-[#1e40af] rounded-full hover:scale-110 hover:shadow-md transition-all">
+                                    <Linkedin className="w-6 h-6 sm:w-8 sm:h-8" />
                                 </a>
-                                <a href="https://www.instagram.com/mr__cool_071" target="_blank" rel="noopener noreferrer" className="p-5 bg-white border border-slate-100 shadow-sm text-[#1e40af] rounded-full hover:scale-110 hover:shadow-md transition-all">
-                                    <Instagram className="w-8 h-8" />
+                                <a href="https://www.instagram.com/mr__cool_071" target="_blank" rel="noopener noreferrer" className="p-4 sm:p-5 bg-white border border-slate-100 shadow-sm text-[#1e40af] rounded-full hover:scale-110 hover:shadow-md transition-all">
+                                    <Instagram className="w-6 h-6 sm:w-8 sm:h-8" />
                                 </a>
-                                <a href="https://wa.me/919505458711" target="_blank" rel="noopener noreferrer" className="p-5 bg-green-50 border border-green-100 shadow-sm text-green-600 rounded-full hover:scale-110 hover:shadow-md transition-all">
-                                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                                <a href="https://wa.me/919505458711" target="_blank" rel="noopener noreferrer" className="p-4 sm:p-5 bg-green-50 border border-green-100 shadow-sm text-green-600 rounded-full hover:scale-110 hover:shadow-md transition-all">
+                                    <svg className="w-6 h-6 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.412c-1.935 0-3.83-.502-5.496-1.455l-.392-.224-4.085 1.071 1.09-3.982-.246-.392c-.996-1.587-1.52-3.421-1.52-5.308 0-5.741 4.673-10.415 10.417-10.415 2.78 0 5.394 1.082 7.359 3.049 1.966 1.967 3.048 4.581 3.048 7.366 0 5.742-4.675 10.416-10.417 10.416m10.414-20.781c-2.781-2.783-6.478-4.314-10.414-4.314-8.1 0-14.693 6.591-14.693 14.693 0 2.59.676 5.116 1.961 7.347l-2.083 7.611 7.787-2.041c2.152 1.171 4.59 1.789 7.076 1.789 8.1 0 14.695-6.591 14.695-14.695 0-3.924-1.527-7.619-4.315-10.414"/>
                                     </svg>
                                 </a>
@@ -104,10 +104,10 @@ const Contact = () => {
                         viewport={{ once: true }}
                         className="flex-1"
                     >
-                        <div className="bg-white p-8 sm:p-12 rounded-[3.5rem] border border-slate-100 shadow-xl relative overflow-hidden group">
+                        <div className="bg-white p-6 sm:p-8 md:p-12 rounded-[2.5rem] sm:rounded-[3.5rem] border border-slate-100 shadow-xl relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 group-hover:bg-blue-100 rounded-full -mr-16 -mt-16 transition-colors duration-500"></div>
-                            <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8 relative z-10">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                                     <div>
                                         <label className="block text-sm font-bold text-slate-700 mb-3 tracking-wide uppercase">Name</label>
                                         <input

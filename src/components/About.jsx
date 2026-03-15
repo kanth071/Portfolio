@@ -32,7 +32,7 @@ const About = () => {
 
     return (
         <section id="about" className="section-padding py-24 bg-white">
-            <div className="max-w-[1400px] mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4 md:px-12">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -60,17 +60,17 @@ const About = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, amount: 0.1 }}
                             transition={{ delay: idx * 0.05, duration: 0.6 }}
-                            className="flex flex-row items-center bg-[#f8fbfe] py-10 px-12 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group cursor-pointer motion-safe-gpu"
+                            className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left bg-[#f8fbfe] py-8 px-6 sm:py-10 sm:px-12 rounded-[2.5rem] border border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group cursor-pointer motion-safe-gpu"
                         >
-                            <div className="w-24 h-24 bg-white rounded-3xl flex items-center justify-center shadow-md border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-lg transition-all duration-500 p-2 overflow-hidden flex-shrink-0">
+                            <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-3xl flex items-center justify-center shadow-md border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-lg transition-all duration-500 p-2 overflow-hidden flex-shrink-0">
                                 <div className="w-full h-full group-hover:scale-110 transition-transform duration-500 flex items-center justify-center">
                                     {spec.icon}
                                 </div>
                             </div>
 
-                            <div className="ml-10 text-left flex-1">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-[#1e40af] transition-colors">{spec.title}</h3>
-                                <p className="text-slate-600 font-medium leading-relaxed text-base">
+                            <div className="mt-6 sm:mt-0 sm:ml-10 flex-1">
+                                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-[#1e40af] transition-colors">{spec.title}</h3>
+                                <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base">
                                     {spec.desc}
                                 </p>
                             </div>

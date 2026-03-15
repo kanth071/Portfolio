@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Skills = () => {
-    const [activeTab, setActiveTab] = useState('ALL');
+    const [activeTab, setActiveTab] = useState('ALL'); // Default to ALL before check
 
+    useEffect(() => {
+        // Strictly apply the condition on component mount for mobile devices
+        if (typeof window !== 'undefined' && window.innerWidth < 768) {
+            setActiveTab('TOOLS & FRAMEWORKS');
+        } else {
+            setActiveTab('ALL');
+        }
+    }, []);
     const categories = [
         'ALL',
         'PROGRAMMING',
@@ -44,7 +52,7 @@ const Skills = () => {
 
     return (
         <section id="skills" className="section-padding py-24 bg-white overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 md:px-8">
+            <div className="max-w-7xl mx-auto px-4 md:px-12">
                 {/* Section Heading - Centered and Styled like Payal Sahu's Portflio */}
                 <div className="text-center mb-16">
                     <h2 className="text-5xl font-bold text-[#1e40af] mb-12">
@@ -82,7 +90,7 @@ const Skills = () => {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.2 }}
-                                className="bg-slate-50 border border-slate-100 p-12 rounded-[2.5rem] flex items-center justify-center text-center group hover:bg-white hover:shadow-2xl hover:border-blue-100 transition-all duration-500 h-32 motion-safe-gpu"
+                                className="bg-slate-50 border border-slate-100 p-6 sm:p-8 md:p-12 rounded-[2.5rem] flex items-center justify-center text-center group hover:bg-white hover:shadow-2xl hover:border-blue-100 transition-all duration-500 h-32 motion-safe-gpu"
                             >
                                 <span className="text-sm font-bold text-slate-800 tracking-widest group-hover:text-[#1e40af] transition-colors uppercase">
                                     {skill.name}

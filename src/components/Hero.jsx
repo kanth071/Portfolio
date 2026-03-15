@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, MapPin, Instagram, User } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, User } from 'lucide-react';
 import { Link } from 'react-scroll';
 
 import profileImg from '../assets/profile.png';
@@ -35,20 +35,12 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center justify-center md:justify-start gap-8 mb-12 text-[#1e40af]">
+                        <div className="flex items-center justify-center md:justify-start gap-6 mb-12 text-[#1e40af] ml-1">
                             <a href="https://github.com/kanth071" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
-                                <Github strokeWidth={2.5} className="w-7 h-7" />
+                                <Github strokeWidth={2.5} className="w-6 h-6" />
                             </a>
                             <a href="https://www.linkedin.com/in/lakshmi-kanth-pulipaka-6957b932b" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
-                                <Linkedin strokeWidth={2.5} className="w-7 h-7" />
-                            </a>
-                            <a href="https://www.instagram.com/mr__cool_071" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
-                                <Instagram strokeWidth={2.5} className="w-7 h-7" />
-                            </a>
-                            <a href="https://wa.me/919505458711" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
-                                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.412c-1.935 0-3.83-.502-5.496-1.455l-.392-.224-4.085 1.071 1.09-3.982-.246-.392c-.996-1.587-1.52-3.421-1.52-5.308 0-5.741 4.673-10.415 10.417-10.415 2.78 0 5.394 1.082 7.359 3.049 1.966 1.967 3.048 4.581 3.048 7.366 0 5.742-4.675 10.416-10.417 10.416m10.414-20.781c-2.781-2.783-6.478-4.314-10.414-4.314-8.1 0-14.693 6.591-14.693 14.693 0 2.59.676 5.116 1.961 7.347l-2.083 7.611 7.787-2.041c2.152 1.171 4.59 1.789 7.076 1.789 8.1 0 14.695-6.591 14.695-14.695 0-3.924-1.527-7.619-4.315-10.414"/>
-                                </svg>
+                                <Linkedin strokeWidth={2.5} className="w-6 h-6" />
                             </a>
                         </div>
 
@@ -79,7 +71,7 @@ const Hero = () => {
                             <motion.div 
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                                className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[520px] bg-white p-4 rounded-[4rem] shadow-[0_32px_64px_-16px_rgba(30,64,175,0.15)] border border-slate-100 overflow-hidden group-hover:shadow-[0_48px_80px_-20px_rgba(30,64,175,0.25)] transition-all duration-500"
+                                className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[520px] bg-white p-4 rounded-[4rem] shadow-[0_32px_64px_-16px_rgba(30,64,175,0.15)] border border-slate-100 overflow-hidden group-hover:shadow-[0_48px_80px_-20px_rgba(30,64,175,0.25)] transition-all duration-500"
                             >
                                 {/* Tech Brackets/Corners */}
                                 <div className="absolute top-8 left-8 w-12 h-12 border-t-4 border-l-4 border-[#1e40af]/20 rounded-tl-2xl"></div>
