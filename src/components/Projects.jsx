@@ -38,7 +38,7 @@ const Projects = () => {
 
     return (
         <section id="projects" className="section-padding py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4 md:px-12">
                 <h2 className="text-4xl font-bold text-[#1e40af] text-center mb-16 uppercase tracking-tight">Featured Projects</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -55,6 +55,7 @@ const Projects = () => {
                                 <img
                                     src={project.img}
                                     alt={project.title}
+                                    loading="lazy"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-blue-900/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
@@ -64,7 +65,7 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className="p-10 flex-1 flex flex-col items-center text-center">
+                            <div className="p-6 sm:p-10 flex-1 flex flex-col items-center text-center">
                                 <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md transition-all duration-500 p-2">
                                     <div className="w-full h-full group-hover:scale-110 transition-transform duration-500 flex items-center justify-center">
                                         {project.icon}

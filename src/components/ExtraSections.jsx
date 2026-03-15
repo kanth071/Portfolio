@@ -112,33 +112,34 @@ const ExtraSections = () => {
                     Experience
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 md:px-12 relative z-10">
                     <div className="text-center mb-24">
                         <motion.h2 
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-5xl lg:text-6xl font-black text-slate-900 tracking-tight"
+                            className="text-5xl lg:text-6xl font-black text-[#1e40af] tracking-tight"
                         >
-                            Professional <span className="text-[#1e40af]">Experience</span>
+                            Professional Experience
                         </motion.h2>
                     </div>
 
                     <div className="relative">
-                        {/* Vertical Timeline Line */}
-                        <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-slate-100 hidden lg:block"></div>
+                        {/* Vertical Timeline Line - Left on mobile, Center on desktop */}
+                        <div className="absolute left-6 lg:left-1/2 -translate-x-1/2 top-0 bottom-0 w-[4px] lg:w-[2px] bg-slate-100 z-0"></div>
 
-                        <div className="space-y-24">
+                        <div className="space-y-16 lg:space-y-24">
                             {/* 01 - Developers Arena */}
-                            <div className="relative flex flex-col lg:flex-row items-center justify-between group">
-                                <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-200 border-4 border-white z-20 group-hover:bg-[#1e40af] group-hover:scale-125 transition-all duration-500"></div>
-                                <div className="absolute left-[10%] lg:left-[15%] top-1/2 -translate-y-1/2 text-[10rem] lg:text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 transition-colors duration-500">01</div>
+                            <div className="relative flex flex-col lg:flex-row items-center justify-between group focus:outline-none" tabIndex="0">
+                                {/* Timeline nodes - mobile and desktop */}
+                                <div className="absolute left-6 lg:left-1/2 -translate-x-1/2 w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-200 border-[4px] border-white z-20 group-hover:bg-[#1e40af] group-focus:bg-[#1e40af] group-active:bg-[#1e40af] group-hover:scale-125 group-focus:scale-125 transition-all duration-500 top-1/2 -translate-y-1/2 lg:top-auto lg:translate-y-0 shadow-sm"></div>
+                                <div className="hidden lg:block absolute left-[15%] top-1/2 -translate-y-1/2 text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 group-focus:text-blue-50 transition-colors duration-500 overflow-hidden whitespace-nowrap">01</div>
                                 
                                 <motion.div 
                                     initial={{ opacity: 0, x: -50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
-                                    className="w-full lg:w-[45%] z-10"
+                                    className="w-full lg:w-[45%] z-10 pl-16 lg:pl-0"
                                 >
                                     <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
                                         <div className="flex justify-between items-start mb-8">
@@ -163,15 +164,15 @@ const ExtraSections = () => {
                             </div>
 
                             {/* 02 - SmartBridge */}
-                            <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between group">
-                                <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-200 border-4 border-white z-20 group-hover:bg-[#1e40af] group-hover:scale-125 transition-all duration-500"></div>
-                                <div className="absolute right-[10%] lg:right-[15%] top-1/2 -translate-y-1/2 text-[10rem] lg:text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 transition-colors duration-500">02</div>
+                            <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between group focus:outline-none" tabIndex="0">
+                                <div className="absolute left-6 lg:left-1/2 -translate-x-1/2 w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-200 border-[4px] border-white z-20 group-hover:bg-[#1e40af] group-focus:bg-[#1e40af] group-active:bg-[#1e40af] group-hover:scale-125 group-focus:scale-125 transition-all duration-500 top-1/2 -translate-y-1/2 lg:top-auto lg:translate-y-0 shadow-sm"></div>
+                                <div className="hidden lg:block absolute right-[15%] top-1/2 -translate-y-1/2 text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 group-focus:text-blue-50 transition-colors duration-500 overflow-hidden whitespace-nowrap">02</div>
                                 
                                 <motion.div 
                                     initial={{ opacity: 0, x: 50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
-                                    className="w-full lg:w-[45%] z-10"
+                                    className="w-full lg:w-[45%] z-10 pl-16 lg:pl-0"
                                 >
                                     <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
                                         <div className="flex justify-between items-start mb-8">
@@ -196,15 +197,15 @@ const ExtraSections = () => {
                             </div>
 
                             {/* 03 - Aspire Institute */}
-                            <div className="relative flex flex-col lg:flex-row items-center justify-between group">
-                                <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-200 border-4 border-white z-20 group-hover:bg-[#1e40af] group-hover:scale-125 transition-all duration-500"></div>
-                                <div className="absolute left-[10%] lg:left-[15%] top-1/2 -translate-y-1/2 text-[10rem] lg:text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 transition-colors duration-500">03</div>
+                            <div className="relative flex flex-col lg:flex-row items-center justify-between group focus:outline-none" tabIndex="0">
+                                <div className="absolute left-6 lg:left-1/2 -translate-x-1/2 w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-200 border-[4px] border-white z-20 group-hover:bg-[#1e40af] group-focus:bg-[#1e40af] group-active:bg-[#1e40af] group-hover:scale-125 group-focus:scale-125 transition-all duration-500 top-1/2 -translate-y-1/2 lg:top-auto lg:translate-y-0 shadow-sm"></div>
+                                <div className="hidden lg:block absolute left-[15%] top-1/2 -translate-y-1/2 text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 group-focus:text-blue-50 transition-colors duration-500 overflow-hidden whitespace-nowrap">03</div>
                                 
                                 <motion.div 
                                     initial={{ opacity: 0, x: -50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
-                                    className="w-full lg:w-[45%] z-10"
+                                    className="w-full lg:w-[45%] z-10 pl-16 lg:pl-0"
                                 >
                                     <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
                                         <div className="flex justify-between items-start mb-8">
@@ -229,15 +230,15 @@ const ExtraSections = () => {
                             </div>
 
                             {/* 04 - Edunet */}
-                            <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between group">
-                                <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-200 border-4 border-white z-20 group-hover:bg-[#1e40af] group-hover:scale-125 transition-all duration-500"></div>
-                                <div className="absolute right-[10%] lg:right-[15%] top-1/2 -translate-y-1/2 text-[10rem] lg:text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 transition-colors duration-500">04</div>
+                            <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between group focus:outline-none" tabIndex="0">
+                                <div className="absolute left-6 lg:left-1/2 -translate-x-1/2 w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-200 border-[4px] border-white z-20 group-hover:bg-[#1e40af] group-focus:bg-[#1e40af] group-active:bg-[#1e40af] group-hover:scale-125 group-focus:scale-125 transition-all duration-500 top-1/2 -translate-y-1/2 lg:top-auto lg:translate-y-0 shadow-sm"></div>
+                                <div className="hidden lg:block absolute right-[15%] top-1/2 -translate-y-1/2 text-[14rem] font-black text-slate-50 z-0 select-none group-hover:text-blue-50 group-focus:text-blue-50 transition-colors duration-500 overflow-hidden whitespace-nowrap">04</div>
                                 
                                 <motion.div 
                                     initial={{ opacity: 0, x: 50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
-                                    className="w-full lg:w-[45%] z-10"
+                                    className="w-full lg:w-[45%] z-10 pl-16 lg:pl-0"
                                 >
                                     <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] hover:shadow-[0_40px_80px_rgba(30,64,175,0.08)] transition-all duration-500 relative overflow-hidden group/card hover:-translate-y-2">
                                         <div className="flex justify-between items-start mb-8">
@@ -267,7 +268,7 @@ const ExtraSections = () => {
 
             {/* Education */}
             <section id="education" className="section-padding py-24 bg-white">
-                <div className="max-w-6xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4 md:px-12">
                     <h2 className="text-4xl font-bold text-[#1e40af] mb-12 text-center uppercase tracking-tight">Education</h2>
                     <div className="flex flex-col gap-8">
                         {/* VIT */}
@@ -314,18 +315,18 @@ const ExtraSections = () => {
 
             {/* Certifications Grid */}
             <section id="certifications" className="section-padding py-16 bg-white">
-                <div className="max-w-6xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4 md:px-12">
                     <h2 className="text-4xl font-bold text-[#1e40af] mb-10 text-center uppercase tracking-tight">Certifications</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {certificates.map((cert) => (
                             <motion.div
                                 key={cert.id}
                                 whileHover={{ y: -6 }}
-                                className="bg-[#f8fbfe] rounded-[2rem] p-6 flex flex-col justify-between items-start border border-blue-50 shadow-sm hover:shadow-lg transition-all duration-500 group h-[17rem]"
+                                className="bg-[#f8fbfe] rounded-[2rem] p-5 flex flex-col justify-between items-start border border-blue-50 shadow-sm hover:shadow-lg transition-all duration-500 group h-[13.5rem]"
                             >
                                 <div className="w-full">
-                                    <div className="flex items-start gap-4 mb-5">
-                                        <div className={`w-14 h-14 flex-shrink-0 rounded-xl shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md bg-white flex items-center justify-center overflow-hidden transition-all duration-500 p-2 ${cert.bgIcon || ''}`}>
+                                    <div className="flex items-start gap-4 mb-3">
+                                        <div className={`w-12 h-12 flex-shrink-0 rounded-xl shadow-sm border border-slate-100 group-hover:border-[#1e40af]/30 group-hover:shadow-md bg-white flex items-center justify-center overflow-hidden transition-all duration-500 p-2 ${cert.bgIcon || ''}`}>
                                             {cert.logoComponent ? (
                                                 <div className="w-full h-full group-hover:scale-110 transition-transform duration-500">
                                                     <cert.logoComponent />
@@ -340,7 +341,7 @@ const ExtraSections = () => {
                                         </div>
                                         <div className="flex flex-col">
                                             <p className="text-[9px] font-bold tracking-widest text-slate-400 uppercase mb-1">{cert.category}</p>
-                                            <h3 className="text-lg font-bold text-slate-800 leading-tight tracking-tight">{cert.title}</h3>
+                                            <h3 className="text-base font-bold text-slate-800 leading-tight tracking-tight">{cert.title}</h3>
                                         </div>
                                     </div>
                                     <p className="text-slate-500 text-[10px] font-semibold uppercase tracking-wider">{cert.issuer}</p>
@@ -349,7 +350,7 @@ const ExtraSections = () => {
                                 <div className="w-full flex justify-end">
                                     <button
                                         onClick={() => setSelectedCert(cert)}
-                                        className="px-5 py-2.5 rounded-full bg-white border border-slate-200 text-[10px] font-bold tracking-widest text-[#1e40af] uppercase hover:bg-[#1e40af] hover:text-white hover:shadow-lg transition-all duration-300 active:scale-95 shadow-sm"
+                                        className="px-4 py-2 rounded-full bg-white border border-slate-200 text-[9px] font-bold tracking-widest text-[#1e40af] uppercase hover:bg-[#1e40af] hover:text-white hover:shadow-lg transition-all duration-300 active:scale-95 shadow-sm"
                                     >
                                         VIEW CERTIFICATE
                                     </button>
@@ -435,7 +436,7 @@ const ExtraSections = () => {
 
             {/* Achievements */}
             <section id="achievements" className="section-padding py-24 bg-white">
-                <div className="max-w-6xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4 md:px-12">
                     <h2 className="text-4xl font-bold text-[#1e40af] mb-12 text-center uppercase tracking-tight">Achievements</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                         {/* ICAT */}
