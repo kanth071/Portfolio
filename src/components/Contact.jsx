@@ -51,6 +51,7 @@ const Contact = () => {
                     <h2 className="text-5xl font-bold text-[#1e40af] mb-4">
                         Get In Touch
                     </h2>
+                    <div className="w-20 h-1.5 bg-[#1e40af] mx-auto rounded-full mb-6 opacity-20"></div>
                     <p className="text-slate-600 font-medium">Have a project in mind? Let's talk.</p>
                 </div>
 

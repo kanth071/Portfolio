@@ -118,10 +118,11 @@ const ExtraSections = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-5xl lg:text-6xl font-black text-[#1e40af] tracking-tight"
+                            className="text-5xl lg:text-6xl font-black text-[#1e40af] tracking-tight mb-4"
                         >
                             Professional Experience
                         </motion.h2>
+                        <div className="w-20 h-1.5 bg-[#1e40af] mx-auto rounded-full opacity-20"></div>
                     </div>
 
                     <div className="relative">
@@ -269,7 +270,10 @@ const ExtraSections = () => {
             {/* Education */}
             <section id="education" className="section-padding py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 md:px-12">
-                    <h2 className="text-4xl font-bold text-[#1e40af] mb-12 text-center uppercase tracking-tight">Education</h2>
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-[#1e40af] mb-4 uppercase tracking-tight">Education</h2>
+                        <div className="w-20 h-1.5 bg-[#1e40af] mx-auto rounded-full opacity-20"></div>
+                    </div>
                     <div className="flex flex-col gap-8">
                         {/* VIT */}
                         <motion.div
@@ -316,7 +320,10 @@ const ExtraSections = () => {
             {/* Certifications Grid */}
             <section id="certifications" className="section-padding py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 md:px-12">
-                    <h2 className="text-4xl font-bold text-[#1e40af] mb-10 text-center uppercase tracking-tight">Certifications</h2>
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-[#1e40af] mb-4 uppercase tracking-tight">Certifications</h2>
+                        <div className="w-20 h-1.5 bg-[#1e40af] mx-auto rounded-full opacity-20"></div>
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {certificates.map((cert) => (
                             <motion.div
@@ -437,7 +444,10 @@ const ExtraSections = () => {
             {/* Achievements */}
             <section id="achievements" className="section-padding py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 md:px-12">
-                    <h2 className="text-4xl font-bold text-[#1e40af] mb-12 text-center uppercase tracking-tight">Achievements</h2>
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-[#1e40af] mb-4 uppercase tracking-tight">Achievements</h2>
+                        <div className="w-20 h-1.5 bg-[#1e40af] mx-auto rounded-full opacity-20"></div>
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                         {/* ICAT */}
                         <motion.div

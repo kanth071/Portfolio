@@ -55,44 +55,45 @@ const Skills = () => {
             <div className="max-w-7xl mx-auto px-4 md:px-12">
                 {/* Section Heading - Centered and Styled like Payal Sahu's Portflio */}
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-bold text-[#1e40af] mb-12">
-                        Skills Section
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#1e40af] mb-4">
+                        Skills
                     </h2>
+                    <div className="w-20 h-1.5 bg-[#1e40af] mx-auto rounded-full mb-12 opacity-20"></div>
 
                     {/* Centered Filter Tabs */}
-                    <div className="flex flex-wrap justify-center gap-4 mb-16">
+                    <div className="flex flex-wrap justify-center gap-3 mb-16">
                         {categories.map((cat) => (
                             <button
                                 key={cat}
                                 onClick={() => setActiveTab(cat)}
-                                className={`px-8 py-2.5 rounded-xl text-sm font-bold tracking-tight transition-all duration-300 ${activeTab === cat
-                                    ? 'bg-[#1e40af] text-white shadow-lg scale-105'
+                                className={`px-6 py-2 rounded-xl text-xs sm:text-sm font-bold tracking-tight transition-all duration-300 ${activeTab === cat
+                                    ? 'bg-[#1e40af] text-white shadow-md'
                                     : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                                     }`}
                             >
-                                {cat.charAt(0) + cat.slice(1).toLowerCase()}
+                                {cat === 'ALL' ? 'All Skills' : (cat.charAt(0) + cat.slice(1).toLowerCase())}
                             </button>
                         ))}
                     </div>
                 </div>
 
-                {/* Keeping the large box structure as requested */}
+                {/* Streamlined grid layout */}
                 <motion.div
                     layout
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
                 >
                     <AnimatePresence mode='popLayout'>
                         {filteredSkills.map((skill) => (
                             <motion.div
                                 layout
                                 key={skill.name}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                exit={{ opacity: 0, scale: 0.9 }}
                                 transition={{ duration: 0.2 }}
-                                className="bg-slate-50 border border-slate-100 p-6 sm:p-8 md:p-12 rounded-[2.5rem] flex items-center justify-center text-center group hover:bg-white hover:shadow-2xl hover:border-blue-100 transition-all duration-500 h-32 motion-safe-gpu"
+                                className="bg-slate-50/50 border border-slate-100 p-4 rounded-2xl flex items-center justify-center text-center group hover:bg-white hover:shadow-xl hover:border-blue-200 transition-all duration-500 h-20 motion-safe-gpu"
                             >
-                                <span className="text-sm font-bold text-slate-800 tracking-widest group-hover:text-[#1e40af] transition-colors uppercase">
+                                <span className="text-[11px] sm:text-xs font-bold text-slate-700 tracking-wider group-hover:text-[#1e40af] transition-colors uppercase">
                                     {skill.name}
                                 </span>
                             </motion.div>

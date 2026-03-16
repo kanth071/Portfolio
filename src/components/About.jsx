@@ -33,14 +33,17 @@ const About = () => {
     return (
         <section id="about" className="section-padding py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 md:px-12">
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-5xl font-bold text-[#1e40af] mb-16 text-center tracking-tight"
-                >
-                    About Me
-                </motion.h2>
+                <div className="text-center mb-16">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-5xl font-bold text-[#1e40af] mb-4 tracking-tight"
+                    >
+                        About Me
+                    </motion.h2>
+                    <div className="w-20 h-1.5 bg-[#1e40af] mx-auto rounded-full opacity-20"></div>
+                </div>
 
                 <motion.p
                     initial={{ opacity: 0, scale: 0.95 }}
