@@ -56,7 +56,7 @@ const Skills = () => {
                 {/* Section Heading - Centered and Styled like Payal Sahu's Portflio */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-[#1e40af] mb-4">
-                        Skills
+                        Skills Section
                     </h2>
                     <div className="w-20 h-1.5 bg-[#1e40af] mx-auto rounded-full mb-12 opacity-20"></div>
 
