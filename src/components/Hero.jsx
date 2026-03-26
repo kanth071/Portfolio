@@ -27,7 +27,7 @@ const Hero = () => {
                         <div className="flex flex-col gap-5 mb-10 items-center md:items-start text-lg font-medium text-[#1e40af]">
                             <div className="flex items-center gap-4 hover:translate-x-2 transition-transform duration-300">
                                 <Mail className="w-5 h-5" strokeWidth={2.5} />
-                                <span>kanthpuli07@gmail.com</span>
+                                <span>kanthpulipaka@gmail.com</span>
                             </div>
                             <div className="flex items-center gap-4 hover:translate-x-2 transition-transform duration-300">
                                 <MapPin className="w-5 h-5" strokeWidth={2.5} />

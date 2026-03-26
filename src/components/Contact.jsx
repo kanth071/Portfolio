@@ -39,7 +39,7 @@ const Contact = () => {
     };
 
     const contactInfo = [
-        { label: 'Email', value: 'kanthpuli07@gmail.com', icon: <Mail className="w-8 h-8 text-[#1e40af]" />, color: 'bg-blue-50' },
+        { label: 'Email', value: 'kanthpulipaka@gmail.com', icon: <Mail className="w-8 h-8 text-[#1e40af]" />, color: 'bg-blue-50' },
         { label: 'Phone', value: '+91 95054 58711', icon: <Phone className="w-8 h-8 text-[#1e40af]" />, color: 'bg-indigo-50' },
         { label: 'Location', value: 'Bhimavaram, India', icon: <MapPin className="w-8 h-8 text-[#1e40af]" />, color: 'bg-sky-50' },
     ];
